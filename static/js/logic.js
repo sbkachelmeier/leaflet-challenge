@@ -27,19 +27,18 @@ fetch(url)
 })
 
 function getColor(d){
-        return d > 1000
-          ? "#800026"
-          : d > 90
-          ? "#BD0026"
+        return d > 90
+          ? "#581845"
           : d > 70
-          ? "#E31A1C"
+          ? "#900C3F"
           : d > 50
-          ? "#FC4E2A"
+          ? "#C70039"
           : d > 30
-          ? "#FD8D3C"
+          ? "#FF5733"
           : d > 10
-          ? "#FED976"
-          : "#FFEDA0";
+
+          ? "#FFC300"
+          : "#AAE38C";
       
     }
 d3.json(url).then(function(data) {
